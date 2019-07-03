@@ -10,7 +10,6 @@ import com.wzq.zhihuclient.common.BaseFragment
 import com.wzq.zhihuclient.ui.activity.LoginActivity
 import com.wzq.zhihuclient.util.BlurUtil
 import kotlinx.android.synthetic.main.fragment_mine.*
-import org.jetbrains.anko.imageBitmap
 
 class MineFragment : BaseFragment() {
 
@@ -29,7 +28,7 @@ class MineFragment : BaseFragment() {
 
         val bmp = BitmapFactory.decodeResource(resources, R.mipmap.ic_head_1)
         BlurUtil.fromBitmap(activity!!, bmp, 25.0F)
-        iv_mine_personal_blur.imageBitmap = bmp
+        iv_mine_personal_blur.setImageBitmap(bmp)
     }
 
 }

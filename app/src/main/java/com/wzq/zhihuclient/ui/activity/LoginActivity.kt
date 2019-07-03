@@ -3,6 +3,7 @@ package com.wzq.zhihuclient.ui.activity
 import android.os.Bundle
 import com.wzq.zhihuclient.R
 import com.wzq.zhihuclient.common.BaseActivity
+import kotlinx.android.synthetic.main.activity_login.*
 
 class LoginActivity : BaseActivity() {
 
@@ -14,7 +15,10 @@ class LoginActivity : BaseActivity() {
     }
 
     private fun init() {
-
+        tvToRegister.setOnClickListener {
+            intentTo(RegisterActivity::class.java)
+            finish()
+        }
     }
 
 }
